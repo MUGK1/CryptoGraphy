@@ -1,0 +1,33 @@
+.top-Design {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-410%, 0);
+  width: 9rem;
+}
+
+.top-left-Design {
+  width: 4rem;
+}
+
+.logo {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-top: 0.4rem;
+}
+
+.bottom-Design-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30rem;
+  height: 30rem;
+  z-index: -100;
+}
+
+.bottom-Design-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 9rem;
+}

@@ -1,0 +1,35 @@
+.header {
+  position: relative;
+}
+
+.logoContainer {
+  max-width: 50%;
+  margin: 1rem auto;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+  }
+
+  &__First {
+    margin-left: 2rem;
+  }
+
+  &__First,
+  &__Second {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+    color: white;
+  }
+
+  &__Second {
+    margin-left: 18rem;
+  }
+}
+
+.footer {
+  //position: relative;
+}

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Righteous", cursive;
+  font-size: 62.5%;
+  background-color: #dedede;
+  background-color: #425f57; }
+
+::selection {
+  background-color: #558b7bb1;
+  color: white; }
+
+.top-Design {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-410%, 0);
+  width: 9rem; }
+
+.top-left-Design {
+  width: 4rem; }
+
+.logo {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-top: 0.4rem; }
+
+.bottom-Design-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30rem;
+  height: 30rem;
+  z-index: -100; }
+
+.bottom-Design-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 9rem; }
+
+.header {
+  position: relative; }
+
+.logoContainer {
+  max-width: 50%;
+  margin: 1rem auto; }
+  .logoContainer__logo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0; }
+  .logoContainer__First {
+    margin-left: 2rem; }
+  .logoContainer__First, .logoContainer__Second {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+    color: white; }
+  .logoContainer__Second {
+    margin-left: 18rem; }

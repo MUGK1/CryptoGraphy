@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Righteous", cursive;
+  font-size: 62.5%;
+  background-color: hsl(0, 1%, 87%);
+  background-color: #425f57;
+}
+
+::selection {
+  background-color: #558b7bb1;
+  color: white;
+}

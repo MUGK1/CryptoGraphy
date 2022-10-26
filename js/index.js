@@ -1,13 +1,15 @@
-const bgBtn = document.getElementById("spanbtn");
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
+const cursorr = document.getElementById("cursorr");
 
-btn2.addEventListener("click", () => {
-  bgBtn.classList.add("activateAnimation");
-  bgBtn.classList.remove("activateAnimationleft");
+document.addEventListener("mousemove", e => {
+  cursorr.setAttribute(
+    "style",
+    "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px;"
+  );
 });
 
-btn1.addEventListener("click", () => {
-  bgBtn.classList.add("activateAnimationleft");
-  bgBtn.classList.remove("activateAnimation");
+cursorr.addEventListener("click", () => {
+  cursorr.classList.add("animationCursor");
+  setTimeout(() => {
+    cursorr.classList.remove("animationCursor");
+  }, 500);
 });

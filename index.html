@@ -14,66 +14,37 @@
     <title>CryptoGraphy</title>
     <link rel="shortcut icon" href="images/Ellipse7Logo.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/index.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <img
-        src="images/Group10Up-Middle.png"
-        alt="Desgin Logo"
-        class="top-Design"
-      />
-      <img
-        src="images/Group15Up-Left.png"
-        alt="Desgin lines"
-        class="top-left-Design"
-      />
-      <div class="logoContainer">
-        <div class="logoContainer__logo">
-          <h1 class="logoContainer__First">Crypt</h1>
-          <img src="images/Ellipse7LogoBigger.png" alt="logo" class="logo" />
-        </div>
-        <h1 class="logoContainer__Second">Graphy</h1>
-      </div>
-    </header>
+    <section class="secbg">
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+      <div class="bg"></div>
+    </section>
 
-    <main class="main">
-      <section class="leftSide"></section>
+    <img
+      src="svgs/CryptoFirstLogo.svg"
+      class="svgTop"
+      id="logo1"
+    ></img>
+    <img
+    src="svgs/GraphySecondLogo.svg"
+    class="svgbottom"
+    id="logo2"
+  ></img>
 
-      <section class="rightSide">
-        <img
-          src="images/Group13Right-BackGround.png"
-          alt="scratch background"
-          class="rightSide__bg"
-        />
-        <div class="rightSide__mainel">
-          <section class="rightSide__top">
-            <h1 class="rightSide__header">Encryption Method</h1>
-            <div class="btnDiv">
-              <span class="span" id="spanbtn"></span>
-              <button class="btn" id="btn1">Encrypt</button>
-              <button class="btn" id="btn2">Decrypt</button>
-            </div>
-          </section>
-          <section class="rightSide__bottom">
-            <h1 class="rightSide__header kHeader">K-NUMBER</h1>
-            <span class="rightSide__sp"></span>
-            <input type="number" class="rightSide__input" required />
-          </section>
-      </section>
-    </main>
 
-    <footer class="footer">
-      <img
-        src="images/LoopLeft-Down.png"
-        alt="A Graphic part"
-        class="bottom-Design-left"
-      />
-      <img
-        src="images/Group3Down-Right.png"
-        alt="Logo Desgin"
-        class="bottom-Design-right"
-      />
-    </footer>
+    <div class="cursor" id="cursorr"></div>
+
+    <script src="lib/anime.min.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

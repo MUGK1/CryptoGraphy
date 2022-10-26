@@ -5,13 +5,16 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
+  cursor: none;
 }
 
 body {
   font-family: "Righteous", cursive;
-  font-size: 62.5%;
-  background-color: hsl(0, 1%, 87%);
-  background-color: #425f57;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  position: relative;
 }
 
 ::selection {

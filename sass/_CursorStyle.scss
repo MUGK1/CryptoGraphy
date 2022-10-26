@@ -1,0 +1,36 @@
+.cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 18px 15px 5px 10px;
+  background-color: black;
+  z-index: 200;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+.animationCursor {
+  animation: AnimateWhenClick 0.5s alternate;
+}
+
+.reverseAnimationCursor {
+  animation: AnimateWhenUnClick 0.6s alternate;
+}
+
+@keyframes AnimateWhenClick {
+  from {
+    border-radius: 18px 15px 5px 10px;
+  }
+  to {
+    border-radius: 2px 18px 5px 18px;
+  }
+}
+
+@keyframes AnimateWhenUnClick {
+  from {
+    border-radius: 2px 18px 5px 18px;
+  }
+  to {
+    border-radius: 18px 15px 5px 10px;
+  }
+}

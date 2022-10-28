@@ -1,5 +1,5 @@
 .disNone {
-  display: none; }
+  display: none !important; }
 
 .cursor {
   position: absolute;
@@ -36,7 +36,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  cursor: none; }
+  cursor: default; }
 
 body {
   font-family: "Righteous", cursive;
@@ -66,14 +66,125 @@ input[type="number"] {
 
 .svgTop {
   position: absolute;
-  top: 36%;
-  left: 36%;
+  top: 33%;
+  left: 37.5%;
   z-index: 3;
-  opacity: 0; }
+  opacity: 0;
+  transition: 0.4s ease-in; }
+
+.svgAnime path {
+  animation-duration: 0.4s;
+  animation-name: animateLogo;
+  animation-fill-mode: forwards; }
+
+.svgAnimed path {
+  animation-duration: 0.4s;
+  animation-name: animateLogod;
+  animation-fill-mode: forwards; }
 
 .svgbottom {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 32%;
   z-index: 3;
   opacity: 0; }
+
+.mainSvg path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 51.5%;
+  left: 45.5%;
+  z-index: 6;
+  opacity: 0; }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease; }
+  .cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle; }
+  .cta .btns {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111010;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease; }
+  .cta:hover {
+    color: #c4c1c1; }
+    .cta:hover:before {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7); }
+    .cta:hover .btns {
+      transform: translateX(0); }
+  .cta:active {
+    transform: scale(0.96); }
+
+.opjectPath {
+  position: absolute;
+  top: 20%;
+  left: 0; }
+
+.object1 {
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  width: 15rem;
+  opacity: 0; }
+
+.object2 {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 2.5rem;
+  opacity: 0; }
+
+.object3 {
+  position: absolute;
+  top: 20rem;
+  left: 1rem;
+  width: 10rem;
+  opacity: 0; }
+
+@keyframes animateLogo {
+  from {
+    transform: translateY(0);
+    opacity: 1; }
+  to {
+    transform: translateY(-4rem);
+    opacity: 0.5; } }
+
+@keyframes animateLogod {
+  from {
+    transform: translateY(0);
+    opacity: 1; }
+  to {
+    transform: translateY(2.5rem);
+    opacity: 0.5; } }

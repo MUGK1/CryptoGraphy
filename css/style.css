@@ -29,6 +29,140 @@
   to {
     border-radius: 18px 15px 5px 10px; } }
 
+.circlesWraper__circle1, .circlesWraper__circle2, .circlesWraper__circle3, .circlesWraper__circle4, .circlesWraper__circle5, .circlesWraper__circle6, .circlesWraper__circle7 {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  opacity: 0; }
+
+.circlesWraper__circle1 {
+  background-color: #301b3f;
+  top: 30%;
+  left: -4%; }
+
+.circlesWraper__circle2 {
+  background-color: #151515;
+  top: 18%;
+  left: 7%;
+  z-index: 2; }
+
+.circlesWraper__circle3 {
+  background-color: #151515;
+  top: 4%;
+  left: 17%; }
+
+.circlesWraper__circle4 {
+  background-color: #151515;
+  top: 26%;
+  left: 18%;
+  z-index: 2; }
+
+.circlesWraper__circle5 {
+  background-color: #151515;
+  top: -7%;
+  left: 6%;
+  z-index: 2; }
+
+.circlesWraper__circle6 {
+  background-color: #301b3f;
+  top: -3%;
+  left: -5%; }
+
+.circlesWraper__circle7 {
+  background-color: #151515;
+  top: 16%;
+  left: -1%;
+  z-index: 2; }
+
+.LogoWrapper__LogoP2Top, .LogoWrapper__LogoP2Down {
+  position: absolute;
+  width: 30rem;
+  object-fit: contain; }
+
+.LogoWrapper__LogoP2Top {
+  top: 15%;
+  left: 8%;
+  z-index: 4; }
+
+.LogoWrapper__LogoP2Down {
+  top: 28%;
+  left: 6%;
+  width: 36rem;
+  z-index: 4; }
+
+.btnEncrypt {
+  position: absolute;
+  background-color: #b4a5a5;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  top: 8%;
+  left: 60%;
+  opacity: 0;
+  cursor: pointer; }
+
+.btnDecrypt {
+  position: absolute;
+  background-color: #3c415c;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  top: 15%;
+  left: 60%;
+  opacity: 0;
+  cursor: pointer; }
+
+.Encrypt {
+  position: absolute;
+  top: 42%;
+  left: 57%;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  color: white; }
+
+.EncryptInput {
+  position: absolute;
+  top: 60%;
+  left: 57%;
+  width: 25rem;
+  height: 3.9rem;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-size: 2rem;
+  padding-left: 0.5rem; }
+  .EncryptInput__kNumber {
+    position: absolute;
+    top: 60%;
+    left: 77%;
+    width: 6rem;
+    height: 3.9rem;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    font-size: 2rem;
+    padding-left: 0.5rem; }
+
+.btnGen {
+  position: absolute;
+  top: 74%;
+  left: 64%;
+  background-color: transparent;
+  border: 2px solid #151515;
+  padding: 1.3rem 4.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease-out; }
+
+.btnGen:hover {
+  transform: scale(1.1);
+  border-radius: 15px; }
+
+.btnGen:active {
+  transform: scale(1);
+  border-radius: 10px; }
+
 * {
   margin: 0;
   box-sizing: inherit; }

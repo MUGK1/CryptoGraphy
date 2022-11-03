@@ -1,3 +1,6 @@
+/////////////////////////////////////////////////////////////////
+// First Page Animation and Variables
+
 const cursor = document.getElementById("cursor");
 const topLogo = document.getElementById("logo1");
 const botomLogo = document.getElementById("logo2");

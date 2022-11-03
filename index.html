@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="secbg" id="bgMain">
+    <!-- //////////////////////////////////// -->
+    <!-- First Page -->
+
+    <!-- <section class="secbg" id="bgMain">
       <div class="bg"></div>
       <div class="bg"></div>
       <div class="bg"></div>
@@ -211,23 +214,53 @@
           d="  M 101 33 C 124 164 949 73 1046 202 "
         ></path>
       </svg>
-    </div>
-    <!-- 
-    <div class="objectWrapper">
-      <img src="images/Polygon1object3.png" alt="An object" class="object3" />
-      <svg class="opjectPath3" width="1100" height="500">
-        <path
-          stroke="none"
-          fill="none"
-          d=" M 50 247 C 447 279 489 -1 590 1 C 696 29 788 254 1033 129 Q 221 28 561 498 Q 304.5 371 48 244  "
-        ></path>
-      </svg>
     </div> -->
 
     <!-- <div class="cursor" id="cursorr"></div> -->
 
+    <!-- ///////////////////////////// -->
+
+    <!-- Second Page -->
+    <div class="circlesWraper">
+      <span class="circlesWraper__circle1"></span>
+      <span class="circlesWraper__circle2"></span>
+      <span class="circlesWraper__circle3"></span>
+      <span class="circlesWraper__circle4"></span>
+      <span class="circlesWraper__circle5"></span>
+      <span class="circlesWraper__circle6"></span>
+      <span class="circlesWraper__circle7"></span>
+    </div>
+
+    <div class="LogoWrapper">
+      <img
+        src="images/CryptoLogoSmall2.png"
+        alt="SecondLogo"
+        class="LogoWrapper__LogoP2Top"
+      />
+      <img
+        src="images/GraphyLogoSmallDown2.png"
+        alt="SecondLogo"
+        class="LogoWrapper__LogoP2Down"
+      />
+    </div>
+
+    <span class="btnEncrypt"></span>
+
+    <h1 class="Encrypt">Encrypt</h1>
+    <div class="WrapperInput">
+      <input type="text" class="EncryptInput" required />
+      <input type="number" class="EncryptInput__kNumber" id="k-Number" />
+    </div>
+    <button class="btnGen">Generate</button>
+
+    <span class="btnDecrypt"></span>
+
     <script src="lib/anime.min.js"></script>
-    <script src="js/anime.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/cryptoGraphy.js"></script>
+    <!-- <script src="lib/anime.es.js"></script> -->
+    <!-- <script src="lib/anime.js"></script> -->
+    <!-- <script src="js/animePage1.js"></script> -->
+    <script src="js/animePage2.js"></script>
+    <!-- <script src="js/index.js"></script> -->
   </body>
 </html>

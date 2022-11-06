@@ -178,6 +178,45 @@
   transform: scale(1);
   border-radius: 10px; }
 
+.result {
+  position: absolute;
+  top: 54%;
+  left: 65%;
+  width: 4rem;
+  height: 4rem;
+  background-color: #b9e0ff;
+  border-radius: 30px;
+  opacity: 1; }
+
+.answer {
+  position: absolute;
+  top: 33%;
+  left: 57%;
+  font-size: 5rem;
+  color: #6c4ab6; }
+
+.showingAnswer {
+  position: absolute;
+  top: 53%;
+  left: 53%;
+  font-size: 3.2rem;
+  background-color: white;
+  padding: 1rem 8rem;
+  border-radius: 4px;
+  color: #b9e0ff; }
+
+.reset {
+  position: absolute;
+  top: 71%;
+  left: 61%;
+  font-size: 2rem;
+  background-color: transparent;
+  padding: 1rem 4rem;
+  border-radius: 6px;
+  color: #8d9eff;
+  cursor: pointer;
+  border: none; }
+
 * {
   margin: 0;
   box-sizing: inherit; }

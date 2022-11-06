@@ -1,5 +1,5 @@
 let tl2 = anime.timeline({
-  easing: "easeInOutSine",
+  easing: "easeInOutBack",
   duration: 700,
 });
 
@@ -27,11 +27,12 @@ tl2.add({
   duration: 500,
 });
 
-tl2.add({
+anime({
   targets: ".LogoWrapper__LogoP2Down",
-  easing: "easeOutElastic",
+  easing: "easeOutSine",
+  duration: 800,
+  delay: 3500,
   opacity: 1,
-  duration: 200,
 });
 
 ////////////////////////////////////////////////
@@ -166,4 +167,85 @@ btnDecrypt.addEventListener("click", () => {
     document.querySelector(".kInput1").classList.add("disNone");
     document.querySelector(".btnG1").classList.add("disNone");
   }, 1000);
+});
+
+/////////////////////////////////////////////
+// Result
+
+const btnEncGenerate = document.getElementById("btnEncGen");
+const btnDecGenerate = document.getElementById("btnDecGen");
+
+btnEncGenerate.addEventListener("click", () => {
+  setTimeout(() => {
+    anime({
+      targets: ".btnEncrypt",
+      translateX: 110,
+      translateY: -1,
+      scale: 1,
+      rotate: -360,
+      borderRadius: ["25%", "25%"],
+      duration: 1500,
+      delay: 500,
+      // direction: "alternate",
+    });
+
+    anime({
+      targets: ".h1, .input1, .kInput1, .btnG1",
+      translateY: -5,
+      easing: "easeInOutSine",
+      opacity: 0,
+      duration: 300,
+    });
+  }, 2500);
+
+  setTimeout(() => {
+    anime({
+      targets: ".result",
+      scale: 14,
+      easing: "easeOutBack",
+      opacity: 1,
+      delay: 500,
+    });
+  }, 2650);
+});
+
+btnDecGenerate.addEventListener("click", () => {
+  setTimeout(() => {
+    anime({
+      targets: ".btnDecrypt",
+      translateX: 415,
+      translateY: -1,
+      scale: 1,
+      rotate: -360,
+      borderRadius: ["25%", "25%"],
+      duration: 1500,
+      delay: 500,
+      // direction: "alternate",
+    });
+
+    anime({
+      targets: ".h2, .input2, .kInput2, .btnG2",
+      translateY: -5,
+      easing: "easeInOutSine",
+      opacity: 0,
+      duration: 300,
+    });
+  }, 2500);
+
+  setTimeout(() => {
+    anime({
+      targets: ".result",
+      scale: 14,
+      easing: "easeOutBack",
+      opacity: 1,
+      delay: 500,
+    });
+  }, 2650);
+});
+anime({
+  targets: ".result",
+  scale: 14,
+  easing: "easeOutBack",
+  opacity: 1,
+  delay: 500,
 });

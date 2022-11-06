@@ -20,6 +20,20 @@ tl2.add({
   duration: 1000,
 });
 
+tl2.add({
+  targets: ".LogoWrapper__LogoP2Top",
+  easing: "spring(2, 80, 10, 0)",
+  opacity: 1,
+  duration: 500,
+});
+
+tl2.add({
+  targets: ".LogoWrapper__LogoP2Down",
+  easing: "easeOutElastic",
+  opacity: 1,
+  duration: 200,
+});
+
 ////////////////////////////////////////////////
 // Animation For btns Encrypt Or Decrypt
 
@@ -45,6 +59,11 @@ anime({
 });
 
 btnEncrypt.addEventListener("click", () => {
+  document.querySelector(".h1").classList.remove("disNone");
+  document.querySelector(".input1").classList.remove("disNone");
+  document.querySelector(".kInput1").classList.remove("disNone");
+  document.querySelector(".btnG1").classList.remove("disNone");
+
   anime({
     targets: ".btnEncrypt",
     translateX: 110,
@@ -52,12 +71,54 @@ btnEncrypt.addEventListener("click", () => {
     scale: 15,
     rotate: 380,
     borderRadius: ["50%", "25%"],
-    duration: 1500,
+    duration: 1000,
+    delay: 950,
     // direction: "alternate",
   });
+
+  anime({
+    targets: ".h1, .input1, .kInput1, .btnG1",
+    translateY: 5,
+    easing: "easeInOutSine",
+    opacity: 1,
+    delay: 900,
+    duration: 300,
+  });
+
+  anime({
+    targets: ".btnDecrypt",
+    translateX: 415,
+    translateY: -1,
+    scale: 1,
+    rotate: -360,
+    borderRadius: ["25%", "25%"],
+    duration: 1500,
+    delay: 500,
+    // direction: "alternate",
+  });
+
+  anime({
+    targets: ".h2, .input2, .kInput2, .btnG2",
+    translateY: -5,
+    easing: "easeInOutSine",
+    opacity: 0,
+    duration: 300,
+  });
+
+  setTimeout(() => {
+    document.querySelector(".h2").classList.add("disNone");
+    document.querySelector(".input2").classList.add("disNone");
+    document.querySelector(".kInput2").classList.add("disNone");
+    document.querySelector(".btnG2").classList.add("disNone");
+  }, 1000);
 });
 
 btnDecrypt.addEventListener("click", () => {
+  document.querySelector(".h2").classList.remove("disNone");
+  document.querySelector(".input2").classList.remove("disNone");
+  document.querySelector(".kInput2").classList.remove("disNone");
+  document.querySelector(".btnG2").classList.remove("disNone");
+
   anime({
     targets: ".btnEncrypt",
     translateX: 110,
@@ -66,6 +127,43 @@ btnDecrypt.addEventListener("click", () => {
     rotate: -360,
     borderRadius: ["25%", "25%"],
     duration: 1500,
+    delay: 500,
     // direction: "alternate",
   });
+
+  anime({
+    targets: ".h1, .input1, .kInput1, .btnG1",
+    translateY: -5,
+    easing: "easeInOutSine",
+    opacity: 0,
+    duration: 300,
+  });
+
+  anime({
+    targets: ".btnDecrypt",
+    translateX: 110,
+    translateY: 350,
+    scale: 15,
+    rotate: 380,
+    borderRadius: ["50%", "25%"],
+    duration: 1500,
+    delay: 950,
+    // direction: "alternate",
+  });
+
+  anime({
+    targets: ".h2, .input2, .kInput2, .btnG2",
+    translateY: 5,
+    easing: "easeInOutSine",
+    opacity: 1,
+    delay: 900,
+    duration: 300,
+  });
+
+  setTimeout(() => {
+    document.querySelector(".h1").classList.add("disNone");
+    document.querySelector(".input1").classList.add("disNone");
+    document.querySelector(".kInput1").classList.add("disNone");
+    document.querySelector(".btnG1").classList.add("disNone");
+  }, 1000);
 });

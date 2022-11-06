@@ -221,6 +221,7 @@
     <!-- ///////////////////////////// -->
 
     <!-- Second Page -->
+
     <div class="circlesWraper">
       <span class="circlesWraper__circle1"></span>
       <span class="circlesWraper__circle2"></span>
@@ -246,14 +247,36 @@
 
     <span class="btnEncrypt"></span>
 
-    <h1 class="Encrypt">Encrypt</h1>
+    <!-- For Encryption -->
+    <h1 class="Encrypt h1 disNone" id="h1">Encrypt</h1>
     <div class="WrapperInput">
-      <input type="text" class="EncryptInput" required />
-      <input type="number" class="EncryptInput__kNumber" id="k-Number" />
+      <input type="text" class="EncryptInput input1 disNone" required />
+      <input
+        type="number"
+        class="EncryptInput__kNumber kInput1 disNone"
+        id="k-Number"
+      />
     </div>
-    <button class="btnGen">Generate</button>
+    <button class="btnGen btnG1 disNone" id="btnEncGen">Generate</button>
 
     <span class="btnDecrypt"></span>
+
+    <!-- For Decryption -->
+    <h1 class="Encrypt h2 disNone">Decrypt</h1>
+    <div class="WrapperInput">
+      <input
+        type="text"
+        class="EncryptInput input2 disNone"
+        id="DecryptInput"
+        required
+      />
+      <input
+        type="number"
+        class="EncryptInput__kNumber kInput2 disNone"
+        id="k-NumberD"
+      />
+    </div>
+    <button class="btnGen btnG2 disNone" id="btnDecGen">Ge#era#e</button>
 
     <script src="lib/anime.min.js"></script>
     <script src="js/cryptoGraphy.js"></script>

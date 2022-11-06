@@ -69,6 +69,7 @@
     position: absolute;
     width: 30rem;
     object-fit: contain;
+    opacity: 0;
   }
 
   &__LogoP2Top {
@@ -118,11 +119,12 @@
 
 .Encrypt {
   position: absolute;
-  top: 42%;
+  top: 40%;
   left: 57%;
   font-size: 5rem;
   letter-spacing: 3px;
   color: rgb(255, 255, 255);
+  opacity: 0;
 }
 
 .EncryptInput {
@@ -136,6 +138,7 @@
   font-family: inherit;
   font-size: 2rem;
   padding-left: 0.5rem;
+  opacity: 0;
 
   &__kNumber {
     position: absolute;
@@ -148,6 +151,7 @@
     font-family: inherit;
     font-size: 2rem;
     padding-left: 0.5rem;
+    opacity: 0;
   }
 }
 
@@ -161,6 +165,19 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.4s ease-out;
+  opacity: 0;
+}
+
+.btnG2 {
+  border: none;
+  color: #564464;
+  background-color: rgba(255, 255, 255, 0.582);
+  filter: blur(10px);
+  transition: all 0.4s ease-in;
+}
+
+.btnG2:hover {
+  filter: none;
 }
 
 .btnGen:hover {

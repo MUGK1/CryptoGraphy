@@ -17,7 +17,7 @@ let tl = anime.timeline({
 tl.add({
   targets: ".secbg .bg",
   width: "100%",
-  backgroundColor: "rgb(164, 134, 75)",
+  backgroundColor: "#6C4AB6", //"rgb(164, 134, 75)",
   delay: anime.stagger(100),
 });
 
@@ -26,7 +26,7 @@ tl.add({
 tl.add({
   targets: ".secbg .bg",
   width: "90%",
-  backgroundColor: "rgba(164, 134, 75, 0.776)",
+  backgroundColor: "rgba(142, 114, 225, 0.69)", //"rgba(164, 134, 75, 0.776)",
 });
 
 tl.add({
@@ -46,7 +46,7 @@ btn.addEventListener("click", () => {
     rotate: "0deg",
     borderRadius: "0",
     width: "100%",
-    backgroundColor: "rgb(164, 134, 75)",
+    backgroundColor: "#6C4AB6",
     delay: anime.stagger(110),
   });
 
@@ -75,6 +75,13 @@ btn.addEventListener("click", () => {
     object1.classList.add("disNone");
     object2.classList.add("disNone");
   }, 2500);
+
+  setTimeout(() => {
+    document.getElementById("circles").classList.remove("disNone");
+    document.getElementById("LoGo").classList.remove("disNone");
+    document.getElementById("btnEnc").classList.remove("disNone");
+    document.getElementById("btnDec").classList.remove("disNone");
+  }, 2600);
 });
 
 /////////////////

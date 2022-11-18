@@ -4,6 +4,7 @@
 const inputEncrypt = document.querySelector(".EncryptInput");
 const btnGenerator = document.getElementById("btnEncGen");
 const kNumber = document.getElementById("k-Number");
+const ans = document.getElementById("placeOfAns");
 
 let value = "";
 let newValue = "";
@@ -107,7 +108,7 @@ function changeNewNumbersToLet() {
 }
 
 function combineTheArray() {
-  let valueAfterEncryption = "";
+  valueAfterEncryption = "";
 
   for (let i = 0; i < eachLetterNumber.length; i++) {
     if (eachLetterNumber[i] == -1) {
@@ -116,7 +117,7 @@ function combineTheArray() {
       valueAfterEncryption += eachLetterNumber[i];
     }
   }
-  console.log(valueAfterEncryption);
+  ans.innerHTML = valueAfterEncryption;
 }
 
 ////////////////////////////////////////
@@ -155,3 +156,49 @@ function newAddedKNumberDecryption() {
   }
   console.log(eachLetterNumber);
 }
+
+////////////////////////////////////////////////
+// Reset Answer
+
+const reset = document.getElementById("resetbtn");
+
+reset.addEventListener("click", () => {
+  anime({
+    targets: ".result",
+    scale: 1,
+    easing: "easeOutBack",
+    opacity: 0,
+    delay: 500,
+  });
+
+  anime({
+    targets: ".answer",
+    opacity: 0,
+    easing: "easeOutSine",
+    delay: 600,
+    duration: 300,
+  });
+
+  anime({
+    targets: ".showingAnswer",
+    opacity: 0,
+    easing: "easeOutSine",
+    delay: 600,
+    duration: 300,
+  });
+
+  anime({
+    targets: ".reset",
+    opacity: 0,
+    easing: "easeOutSine",
+    delay: 600,
+    duration: 300,
+  });
+
+  setTimeout(() => {
+    document.querySelector(".result").classList.add("disNone");
+    document.querySelector(".answer").classList.add("disNone");
+    document.querySelector(".showingAnswer").classList.add("disNone");
+    document.querySelector(".reset").classList.add("disNone");
+  }, 1000);
+});

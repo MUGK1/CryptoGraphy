@@ -19,7 +19,7 @@
     <!-- //////////////////////////////////// -->
     <!-- First Page -->
 
-    <!-- <section class="secbg" id="bgMain">
+    <section class="secbg" id="bgMain">
       <div class="bg"></div>
       <div class="bg"></div>
       <div class="bg"></div>
@@ -186,7 +186,7 @@
       />
     </svg>
 
-    <a href="#" class="cta disNone">
+    <a href="#" class="cta disNone" id="btnBeforeTheNextPg">
       <span>Click me</span>
       <svg width="13px" height="10px" viewBox="0 0 13 10" class="btns">
         <path d="M1,5 L11,5"></path>
@@ -194,7 +194,7 @@
       </svg>
     </a>
 
-    <div class="objectWrapper">
+    <!-- <div class="objectWrapper">
       <img src="images/Rectangle1object1.png" alt="An object" class="object1" />
       <svg class="opjectPath" width="1100" height="500">
         <path
@@ -216,13 +216,13 @@
       </svg>
     </div> -->
 
-    <!-- <div class="cursor" id="cursorr"></div> -->
+    <!-- <div class="cursor" id="cursorr"></div>  -->
 
     <!-- ///////////////////////////// -->
 
     <!-- Second Page -->
 
-    <div class="circlesWraper">
+    <div class="circlesWraper disNone" id="circles">
       <span class="circlesWraper__circle1"></span>
       <span class="circlesWraper__circle2"></span>
       <span class="circlesWraper__circle3"></span>
@@ -232,7 +232,7 @@
       <span class="circlesWraper__circle7"></span>
     </div>
 
-    <div class="LogoWrapper">
+    <div class="LogoWrapper disNone" id="LoGo">
       <img
         src="images/CryptoLogoSmall2.png"
         alt="SecondLogo"
@@ -245,7 +245,7 @@
       />
     </div>
 
-    <span class="btnEncrypt"></span>
+    <span class="btnEncrypt disNone" id="btnEnc"></span>
 
     <!-- For Encryption -->
     <h1 class="Encrypt h1 disNone" id="h1">Encrypt</h1>
@@ -259,7 +259,7 @@
     </div>
     <button class="btnGen btnG1 disNone" id="btnEncGen">Generate</button>
 
-    <span class="btnDecrypt"></span>
+    <span class="btnDecrypt disNone" id="btnDec"></span>
 
     <!-- For Decryption -->
     <h1 class="Encrypt h2 disNone">Decrypt</h1>
@@ -278,18 +278,18 @@
     </div>
     <button class="btnGen btnG2 disNone" id="btnDecGen">Ge#era#e</button>
 
-    <span class="result"></span>
+    <span class="result disNone"></span>
 
-    <h2 class="answer">The Answer</h2>
-    <p class="showingAnswer">mdfjnv kkjurbft</p>
-    <button class="reset">Restart</button>
+    <h2 class="answer disNone">The Answer</h2>
+    <p class="showingAnswer disNone" id="placeOfAns">mdfjnv kkjurbft</p>
+    <button class="reset disNone" id="resetbtn">Restart</button>
 
     <script src="lib/anime.min.js"></script>
     <script src="js/cryptoGraphy.js"></script>
     <!-- <script src="lib/anime.es.js"></script> -->
     <!-- <script src="lib/anime.js"></script> -->
-    <!-- <script src="js/animePage1.js"></script> -->
+    <script src="js/animePage1.js"></script>
     <script src="js/animePage2.js"></script>
-    <!-- <script src="js/index.js"></script> -->
+    <script src="js/index.js"></script>
   </body>
 </html>

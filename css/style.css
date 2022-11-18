@@ -37,40 +37,40 @@
   opacity: 0; }
 
 .circlesWraper__circle1 {
-  background-color: #301b3f;
+  background-color: #8d72e1;
   top: 30%;
   left: -4%; }
 
 .circlesWraper__circle2 {
-  background-color: #151515;
+  background-color: #6c4ab6;
   top: 18%;
   left: 7%;
   z-index: 2; }
 
 .circlesWraper__circle3 {
-  background-color: #151515;
+  background-color: #6c4ab6;
   top: 4%;
   left: 17%; }
 
 .circlesWraper__circle4 {
-  background-color: #151515;
+  background-color: #6c4ab6;
   top: 26%;
   left: 18%;
   z-index: 2; }
 
 .circlesWraper__circle5 {
-  background-color: #151515;
+  background-color: #6c4ab6;
   top: -7%;
   left: 6%;
   z-index: 2; }
 
 .circlesWraper__circle6 {
-  background-color: #301b3f;
+  background-color: #8d72e1;
   top: -3%;
   left: -5%; }
 
 .circlesWraper__circle7 {
-  background-color: #151515;
+  background-color: #6c4ab6;
   top: 16%;
   left: -1%;
   z-index: 2; }
@@ -94,7 +94,7 @@
 
 .btnEncrypt {
   position: absolute;
-  background-color: #b4a5a5;
+  background-color: #432c7a;
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
@@ -105,7 +105,7 @@
 
 .btnDecrypt {
   position: absolute;
-  background-color: #3c415c;
+  background-color: #80489c;
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
@@ -153,12 +153,13 @@
   top: 74%;
   left: 64%;
   background-color: transparent;
-  border: 2px solid #151515;
+  border: 2px solid white;
   padding: 1.3rem 4.5rem;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.4s ease-out;
-  opacity: 0; }
+  opacity: 0;
+  color: white; }
 
 .btnG2 {
   border: none;
@@ -186,24 +187,28 @@
   height: 4rem;
   background-color: #b9e0ff;
   border-radius: 30px;
-  opacity: 1; }
+  opacity: 0; }
 
 .answer {
   position: absolute;
   top: 33%;
   left: 57%;
   font-size: 5rem;
-  color: #6c4ab6; }
+  color: #6c4ab6;
+  opacity: 0; }
 
 .showingAnswer {
   position: absolute;
   top: 53%;
   left: 53%;
-  font-size: 3.2rem;
+  font-size: 3.1rem;
   background-color: white;
-  padding: 1rem 8rem;
+  width: 38rem;
+  padding: 1.6rem 0;
+  text-align: center;
   border-radius: 4px;
-  color: #b9e0ff; }
+  color: #b9e0ff;
+  opacity: 0; }
 
 .reset {
   position: absolute;
@@ -215,7 +220,14 @@
   border-radius: 6px;
   color: #8d9eff;
   cursor: pointer;
-  border: none; }
+  border: none;
+  opacity: 0; }
+
+.reset:hover {
+  background-color: white;
+  border-radius: 3px;
+  width: 14.5rem;
+  padding: 1rem 3rem; }
 
 * {
   margin: 0;

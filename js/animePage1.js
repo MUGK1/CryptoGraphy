@@ -17,7 +17,7 @@ let tl = anime.timeline({
 tl.add({
   targets: ".secbg .bg",
   width: "100%",
-  backgroundColor: "#6C4AB6", //"rgb(164, 134, 75)",
+  backgroundColor: "#1B1464", //"rgb(164, 134, 75)",
   delay: anime.stagger(100),
 });
 
@@ -26,7 +26,7 @@ tl.add({
 tl.add({
   targets: ".secbg .bg",
   width: "90%",
-  backgroundColor: "rgba(142, 114, 225, 0.69)", //"rgba(164, 134, 75, 0.776)",
+  backgroundColor: "rgba(27, 20, 100, 0.55)", //"rgba(164, 134, 75, 0.776)",
 });
 
 tl.add({
@@ -46,7 +46,7 @@ btn.addEventListener("click", () => {
     rotate: "0deg",
     borderRadius: "0",
     width: "100%",
-    backgroundColor: "#6C4AB6",
+    backgroundColor: "#1B1464",
     delay: anime.stagger(110),
   });
 

@@ -14,46 +14,46 @@
   }
 
   &__circle1 {
-    background-color: #8d72e1; //301b3f;
+    background-color: rgba(236, 0, 140, 0.71); //301b3f;
     top: 30%;
     left: -4%;
   }
 
   &__circle2 {
-    background-color: #6c4ab6; //151515;
+    background-color: #ec008c; //151515;
     top: 18%;
     left: 7%;
     z-index: 2;
   }
 
   &__circle3 {
-    background-color: #6c4ab6; //151515;
+    background-color: #ec008c; //151515;
     top: 4%;
     left: 17%;
   }
 
   &__circle4 {
-    background-color: #6c4ab6; //151515;
+    background-color: #ec008c; //151515;
     top: 26%;
     left: 18%;
     z-index: 2;
   }
 
   &__circle5 {
-    background-color: #6c4ab6; //151515;
+    background-color: #ec008c; //151515;
     top: -7%;
     left: 6%;
     z-index: 2;
   }
 
   &__circle6 {
-    background-color: #8d72e1; //301b3f;
+    background-color: rgba(236, 0, 140, 0.71); //301b3f;
     top: -3%;
     left: -5%;
   }
 
   &__circle7 {
-    background-color: #6c4ab6; //151515;
+    background-color: #ec008c; //151515;
     top: 16%;
     left: -1%;
     z-index: 2;
@@ -91,9 +91,9 @@
 
 .btnEncrypt {
   position: absolute;
-  background-color: #432c7a;
-  width: 3rem;
-  height: 3rem;
+  background-color: #91d5c5;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
   top: 8%;
   left: 60%;
@@ -101,11 +101,27 @@
   cursor: pointer;
 }
 
-.btnDecrypt {
+.EncImg {
   position: absolute;
-  background-color: #80489c;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 21%;
+  left: 19%;
+  opacity: 1;
+}
+
+#DecImg {
   width: 3rem;
   height: 3rem;
+  top: 15%;
+  left: 12%;
+}
+
+.btnDecrypt {
+  position: absolute;
+  background-color: #91d5c5;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
   top: 15%;
   left: 60%;

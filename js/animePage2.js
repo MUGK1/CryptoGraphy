@@ -1,5 +1,12 @@
 document.getElementById("btnBeforeTheNextPg").addEventListener("click", () => {
   setTimeout(() => {
+    anime({
+      targets: ".body",
+      easing: "easeInOutBack",
+      backgroundColor: "#1B1464",
+      duration: 1000,
+    });
+
     let tl2 = anime.timeline({
       easing: "easeInOutBack",
       duration: 700,
@@ -67,11 +74,30 @@ document.getElementById("btnBeforeTheNextPg").addEventListener("click", () => {
       document.querySelector(".kInput1").classList.remove("disNone");
       document.querySelector(".btnG1").classList.remove("disNone");
 
+      setTimeout(() => {
+        document.getElementById("EncImg").classList.add("disNone");
+        document.getElementById("DecImg").classList.remove("disNone");
+
+        anime({
+          targets: ".EncImg",
+          opacity: 0,
+          easing: "easeInOutSine",
+          duration: 900,
+        });
+
+        anime({
+          targets: "#DecImg",
+          opacity: 1,
+          easing: "easeInOutSine",
+          duration: 900,
+        });
+      }, 900);
+
       anime({
         targets: ".btnEncrypt",
         translateX: 110,
         translateY: 400,
-        scale: 15,
+        scale: 12,
         rotate: 380,
         borderRadius: ["50%", "25%"],
         duration: 1000,
@@ -122,6 +148,25 @@ document.getElementById("btnBeforeTheNextPg").addEventListener("click", () => {
       document.querySelector(".kInput2").classList.remove("disNone");
       document.querySelector(".btnG2").classList.remove("disNone");
 
+      setTimeout(() => {
+        document.getElementById("EncImg").classList.remove("disNone");
+        document.getElementById("DecImg").classList.add("disNone");
+
+        anime({
+          targets: ".EncImg",
+          opacity: 1,
+          easing: "easeInOutSine",
+          duration: 500,
+        });
+
+        anime({
+          targets: "#DecImg",
+          opacity: 0,
+          easing: "easeInOutSine",
+          duration: 500,
+        });
+      }, 400);
+
       anime({
         targets: ".btnEncrypt",
         translateX: 110,
@@ -146,7 +191,7 @@ document.getElementById("btnBeforeTheNextPg").addEventListener("click", () => {
         targets: ".btnDecrypt",
         translateX: 110,
         translateY: 350,
-        scale: 15,
+        scale: 12,
         rotate: 380,
         borderRadius: ["50%", "25%"],
         duration: 1500,

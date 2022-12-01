@@ -5,6 +5,7 @@ const inputEncrypt = document.querySelector(".EncryptInput");
 const btnGenerator = document.getElementById("btnEncGen");
 const kNumber = document.getElementById("k-Number");
 const ans = document.getElementById("placeOfAns");
+const hans = document.getElementById("headAns");
 
 let value = "";
 let newValue = "";
@@ -54,7 +55,7 @@ btnGenerator.addEventListener("click", () => {
   changeFromLetToNum(newValue);
   newAddedKNumber();
   changeNewNumbersToLet();
-  combineTheArray();
+  combineTheArray("Encrypted Text");
   console.log(newValue);
   console.log(spacesPlace);
 });
@@ -107,7 +108,7 @@ function changeNewNumbersToLet() {
   console.log(eachLetterNumber);
 }
 
-function combineTheArray() {
+function combineTheArray(way) {
   valueAfterEncryption = "";
 
   for (let i = 0; i < eachLetterNumber.length; i++) {
@@ -118,6 +119,7 @@ function combineTheArray() {
     }
   }
   ans.innerHTML = valueAfterEncryption;
+  hans.textContent = way;
 }
 
 ////////////////////////////////////////
@@ -139,7 +141,7 @@ btnDecGenerator.addEventListener("click", () => {
   changeFromLetToNum(newValue);
   newAddedKNumberDecryption();
   changeNewNumbersToLet();
-  combineTheArray();
+  combineTheArray("Decrypted Text");
   console.log(kNum);
 });
 
